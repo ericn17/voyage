@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head> 
-     <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Kanit&family=Roboto:wght@300&display=swap" rel="stylesheet"/>
       </Head>
       <body>
         <Main />
