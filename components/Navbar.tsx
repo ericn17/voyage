@@ -1,36 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import { useState } from 'react';
+import { Bars3Icon } from '@heroicons/react/24/solid'
 
 const Navbar = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const handleMobileMenuToggle = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    <nav className="bg-blue-500 p-4 flex items-center justify-between flex-1 w-fullgit">
+    <nav className="bg-purple-500 p-4 flex items-center justify-between flex-1 w-full">
       {/* Items on the left */}
       <div className="flex items-center space-x-4">
-        <a href="/" className="text-white text-lg">
+        <Link href="/" className="text-white text-lg">
           Home
-        </a>
-        <a href="/about" className="text-white text-lg">
-          About
-        </a>
+        </Link>
+        <Link href="/book-flights" className="text-white text-lg">
+          Book Flights
+        </Link>
       </div>
 
       {/* Logo in the middle */}
-      <a href="/" className="text-white text-2xl font-bold">
-        Your Logo
-      </a>
+      <Link href="/" className="text-white text-2xl font-bold">
+        VOYAGE
+      </Link>
 
       {/* Items on the right */}
-      <div className="flex items-center space-x-4">
-        <a href="/services" className="text-white text-lg">
+      <div className="hidden md:flex items-center space-x-4">
+        <Link href="/services" className="text-white text-lg">
           Services
-        </a>
-        <a href="/contact" className="text-white text-lg">
+        </Link>
+        <Link href="/contact" className="text-white text-lg">
           Contact
-        </a>
+        </Link>
       </div>
+
+      {/* Hamburger menu for mobile */}
+      <div className="md:hidden flex items-center">
+        <button
+          className="text-white text-xl p-2"
+          onClick={handleMobileMenuToggle}
+        >
+          <Bars3Icon />
+        </button>
+      </div>
+
+      {/* Mobile overlay */}
+      {isMobileMenuOpen && (
+        <div className="fixed top-0 left-0 w-full h-full bg-blue-500 z-50">
+          <div className="flex justify-end p-4">
+            <button
+              className="text-white text-xl p-2"
+              onClick={handleMobileMenuToggle}
+            >
+              ×
+            </button>
+          </div>
+          <div className="flex flex-col items-center">
+            <Link href="/" className="text-white text-lg p-4">
+              Home
+            </Link>
+            <Link href="/" className="text-white text-lg p-4">
+              Home
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
 
 export default Navbar;
+
+
