@@ -15,7 +15,7 @@ function HeroImage() {
       <Parallax pages={4} ref={ref}>
         <ParallaxLayer
           offset={0}
-          speed={1}
+          speed={1.5}
           factor={2}
           style={{
             backgroundImage: `url('/space.jpg')`,
