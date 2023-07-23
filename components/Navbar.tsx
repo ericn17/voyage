@@ -16,8 +16,17 @@ const Navbar = () => {
         <Link href="/" className="text-white text-lg">
           Home
         </Link>
+        <Link href="/destinations" className="text-white text-lg">
+          Destinations
+        </Link>
         <Link href="/book-flights" className="text-white text-lg">
           Book Flights
+        </Link>
+        <Link href="/spacecrafts" className="text-white text-lg">
+          Spacecrafts
+        </Link>
+        <Link href="/travel-resources" className="text-white text-lg">
+          Travel Resources
         </Link>
       </div>
 
@@ -28,8 +37,8 @@ const Navbar = () => {
 
       {/* Items on the right */}
       <div className="hidden md:flex items-center space-x-4">
-        <Link href="/services" className="text-white text-lg">
-          Services
+        <Link href="/sign-in" className="text-white text-lg">
+          Sign In
         </Link>
         <Link href="/contact" className="text-white text-lg">
           Contact
@@ -62,11 +71,26 @@ const Navbar = () => {
             </button>
           </div>
           <div className="flex flex-col items-center">
-            <Link href="/" className="text-white text-lg p-4">
+            <Link href="/" className="text-white text-lg">
               Home
             </Link>
-            <Link href="/" className="text-white text-lg p-4">
-              Home
+            <Link href="/destinations" className="text-white text-lg">
+              Destinations
+            </Link>
+            <Link href="/book-flights" className="text-white text-lg">
+              Book Flights
+            </Link>
+            <Link href="/spacecrafts" className="text-white text-lg">
+              Spacecrafts
+            </Link>
+            <Link href="/travel-resources" className="text-white text-lg">
+              Travel Resources
+            </Link>
+            <Link href="/sign-in" className="text-white text-lg">
+              Sign In
+            </Link>
+            <Link href="/contact" className="text-white text-lg">
+              Contact
             </Link>
           </div>
         </div>
