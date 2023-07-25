@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-violet-950 p-4 flex justify-between flex-1 w-full">
+    <nav className="bg-[#05203C] p-4 flex justify-between flex-1 w-full">
       {/* Items on the left */}
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex justify-start space-x-4 w-1/3">
         <Link href="/" className="text-white text-lg">
           Home
         </Link>
@@ -31,12 +31,12 @@ const Navbar = () => {
       </div>
 
       {/* Logo in the middle */}
-      <Link href="/" className="text-white text-2xl font-bold">
+      <Link href="/" className="text-white text-2xl font-bold w-1/3 flex justify-center">
         VOYAGE
       </Link>
 
       {/* Items on the right */}
-      <div className="hidden md:flex items-center space-x-4">
+      <div className="hidden md:flex justify-end space-x-4 w-1/3">
         <Link href="/sign-in" className="text-white text-lg">
           Sign In
         </Link>

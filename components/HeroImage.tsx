@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import ufo from '@/public/ufo-spaceship.jpeg'
-import space from '@/public/space.jpg'
+import space from '@/public/space-palm.jpg'
 import landing from '@/public/landing.jpg'
 import Image from 'next/image'
 
@@ -18,7 +18,7 @@ function HeroImage() {
           speed={1.5}
           factor={2}
           style={{
-            backgroundImage: `url('/space.jpg')`,
+            backgroundImage: `url('/space-palm.jpg')`,
             backgroundSize: 'cover',
           }} 
         />
