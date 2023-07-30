@@ -33,12 +33,11 @@ function HeroImage() {
           }}
         />
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           sticky={{ start: 0.9, end: 2.5 }}
           style={{ textAlign: 'center' }}
         >
-          <Image className=' items-center' src={ufo} alt='ufo' />
-        </ParallaxLayer>
+        </ParallaxLayer> */}
         
         <ParallaxLayer
           offset={0.2}
