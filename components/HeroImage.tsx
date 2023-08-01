@@ -54,13 +54,6 @@ function HeroImage() {
         >
           <Image className='mr-15' src={rocketShip} alt='rocket-ship'  width={300} height={200}/>
         </ParallaxLayer>
-
-        {/* <ParallaxLayer
-          offset={3}
-          speed={2}
-        >
-          <h2 className='flex justify-center text-white'>Crash land on the moon!</h2>
-        </ParallaxLayer> */}
       </Parallax>
     </div>
   )
